@@ -74,8 +74,8 @@ export default function AuthNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Features
+            <Link color="foreground" href="/home">
+              Home
             </Link>
           </NavbarItem>
           <NavbarItem>
