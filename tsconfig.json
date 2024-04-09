@@ -29,7 +29,8 @@
     "app/api/auth/[...nextauth]/route.js",
     "components/authprovider/authprovider.jsx",
     "app/providers.tsx",
-    "app/login/userAvatar.jsx"
+    "app/login/userAvatar.jsx",
+    "app/contexts/DarkModeContext.jsx"
   ],
   "exclude": ["node_modules"]
 }

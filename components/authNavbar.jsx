@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
 import { User } from "@nextui-org/react";
-import { AcmeLogo } from "./AcmeLogo";
+import { AcmeLogo } from "./icons/AcmeIcon";
 import { useState, useEffect } from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
+// import DarkLightSwitch from "./DarkLightSwitch";
 import {
   Navbar,
   NavbarBrand,
@@ -43,11 +44,9 @@ export default function AuthNavbar() {
 
   const login = () => {
     signIn("google");
-    console.log(session);
   };
   const logout = () => {
     signOut("google");
-    console.log(session);
   };
 
   const menuItems = [
@@ -154,6 +153,7 @@ export default function AuthNavbar() {
           ))}
         </NavbarMenu>
       </Navbar>
+      {/* <DarkLightSwitch /> */}
     </>
   );
 }
